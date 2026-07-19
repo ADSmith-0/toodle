@@ -17,4 +17,5 @@ minimumReleaseAgeExclude:
 trustPolicy: no-downgrade
 
 trustPolicyExclude:
-  - package-that-migrated-cicd@1.2.3
+  - undici-types@6.21.0
+  - chokidar@4.0.3
