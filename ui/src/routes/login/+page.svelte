@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
+  import { goto } from '$app/navigation';
 
   // FIX: remove
   function mockCall(time: number): Promise<void> {
@@ -15,7 +15,7 @@
     loading = true;
     await mockCall(1_000);
     loading = false;
-    goto("/board", { replaceState: true });
+    goto('/board', { replaceState: true });
   }
 </script>
 
