@@ -1,0 +1,20 @@
+allowBuilds:
+  esbuild: true
+
+strictDepBuilds: true
+
+onlyBuiltDependencies:
+  - package-with-necessary-build-scripts
+
+ignoredBuiltDependencies:
+  - package-with-unnecessary-build-scripts
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - package-with-critical-hotfix@1.2.3
+
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - package-that-migrated-cicd@1.2.3
